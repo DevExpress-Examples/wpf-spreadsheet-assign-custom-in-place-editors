@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [MainWindow.xaml](./CS/WpfSpreadsheet_CustomCellEditors/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/WpfSpreadsheet_CustomCellEditors/MainWindow.xaml))
+* [MainWindow.xaml.cs](./CS/WpfSpreadsheet_CustomCellEditors/MainWindow.xaml.cs) (VB: [MainWindow.xaml](./VB/WpfSpreadsheet_CustomCellEditors/MainWindow.xaml))
+<!-- default file list end -->
 # How to assign custom in-place editors to worksheet cells (WPF Spreadsheet)
 
 
