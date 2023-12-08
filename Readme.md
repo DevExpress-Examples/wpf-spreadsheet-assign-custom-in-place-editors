@@ -3,17 +3,22 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T385458)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
+
+# Spreadsheet Control for WPF - Assign Custom In-place Editors to Worksheet Cells
+
+This example demonstrates how to use custom editors for in-place editing of cell content. Both predefined editors supported by the <strong>SpreadsheetControl</strong> for in-place editing ([ComboBoxEdit](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.ComboBoxEdit), [DateEdit](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.DateEdit), and [CheckEdit](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.CheckEdit)) and the custom editor ([SpinEdit](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.SpinEdit)) are used to edit cells located in the specific columns of a worksheet table.
+
+## Implementation Details
+
+To assign an in-place editor of a predefined type to a specific cell range in a worksheet, use the `Add` method of the [CustomCellInplaceEditorCollection](https://docs.devexpress.com/OfficeFileAPI/DevExpress.Spreadsheet.CustomCellInplaceEditorCollection) collection, which stores the custom cell editors specified in a worksheet.
+
+To assign your own custom editor to a cell, handle the [SpreadsheetControl.CustomCellEdit](https://docs.devexpress.com/WPF/DevExpress.Xpf.Spreadsheet.SpreadsheetControl.CustomCellEdit) event. This event fires when a user is about to start editing a cell and allows you to supply a custom in-place editor to the edited cell by setting a corresponding [BaseEditSettings](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.Settings.BaseEditSettings) descendant to the event's `EditSettings` parameter.
+
+## Files to Review
 
 * [MainWindow.xaml](./CS/WpfSpreadsheet_CustomCellEditors/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/WpfSpreadsheet_CustomCellEditors/MainWindow.xaml))
 * [MainWindow.xaml.cs](./CS/WpfSpreadsheet_CustomCellEditors/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/WpfSpreadsheet_CustomCellEditors/MainWindow.xaml.vb))
-<!-- default file list end -->
-# How to assign custom in-place editors to worksheet cells (WPF Spreadsheet)
 
+## Documentation
 
-This example demonstrates how to use custom editors for in-place editing of cell content. Both predefined editors supported by the <strong>SpreadsheetControl</strong> for in-place editing (<a href="https://documentation.devexpress.com/#WPF/clsDevExpressXpfEditorsComboBoxEdittopic">ComboBoxEdit</a>, <a href="https://documentation.devexpress.com/#WPF/clsDevExpressXpfEditorsDateEdittopic">DateEdit</a>, and <a href="https://documentation.devexpress.com/#WPF/clsDevExpressXpfEditorsCheckEdittopic">CheckEdit</a>) and the custom editor (<a href="https://documentation.devexpress.com/#WPF/clsDevExpressXpfEditorsSpinEdittopic">SpinEdit</a>) are used to edit cells located in the specific columns of a worksheet table.<br>To assign an in-place editor of a predefined type to a specific cell range in a worksheet, use the <strong>Add</strong> method of the <a href="https://documentation.devexpress.com/#CoreLibraries/clsDevExpressSpreadsheetCustomCellInplaceEditorCollectiontopic">CustomCellInplaceEditorCollection</a> collection, which stores the custom cell editors specified in a worksheet.<br>To assign your own custom editor to a cell, handle the <a href="https://documentation.devexpress.com/#WPF/DevExpressXpfSpreadsheetSpreadsheetControl_CustomCellEdittopic">SpreadsheetControl.CustomCellEdit</a> event. This event fires when a user is about to start editing a cell and allows you to supply a custom in-place editor to the edited cell by setting a corresponding <a href="https://documentation.devexpress.com/#WPF/clsDevExpressXpfEditorsSettingsBaseEditSettingstopic">BaseEditSettings</a> descendant to the event's <strong>EditSettings</strong> parameter.
-
-<br/>
-
-
+* [Custom Cell In-place Editors](https://docs.devexpress.com/WPF/116399/controls-and-libraries/spreadsheet/cell-basics/custom-cell-in-place-editors)
