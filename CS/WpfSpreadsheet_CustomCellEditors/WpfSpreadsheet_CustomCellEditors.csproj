@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -37,19 +37,26 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Data.v19.2" />
-    <Reference Include="DevExpress.Mvvm.v19.2" />
-    <Reference Include="DevExpress.Office.v19.2.Core" />
-    <Reference Include="DevExpress.RichEdit.v19.2.Core" />
-    <Reference Include="DevExpress.RichEdit.v19.2.Export" />
-    <Reference Include="DevExpress.Printing.v19.2.Core" />
-    <Reference Include="DevExpress.Charts.v19.2.Core" />
-    <Reference Include="DevExpress.Spreadsheet.v19.2.Core" />
-    <Reference Include="DevExpress.Xpf.CodeView.v19.2" />
-    <Reference Include="DevExpress.Xpf.Core.v19.2" />
-    <Reference Include="DevExpress.Xpf.Ribbon.v19.2" />
-    <Reference Include="DevExpress.Xpf.Spreadsheet.v19.2" />
-    <Reference Include="DevExpress.Xpf.Themes.Office2016Colorful.v19.2">
+    <Reference Include="DevExpress.Drawing.v24.1" />
+    <Reference Include="DevExpress.Data.v24.1" />
+    <Reference Include="DevExpress.Mvvm.v24.1" />
+    <Reference Include="DevExpress.Office.v24.1.Core" />
+    <Reference Include="DevExpress.RichEdit.v24.1.Core" />
+    <Reference Include="DevExpress.RichEdit.v24.1.Export" />
+    <Reference Include="DevExpress.Printing.v24.1.Core" />
+    <Reference Include="DevExpress.Charts.v24.1.Core" />
+    <Reference Include="DevExpress.Spreadsheet.v24.1.Core" />
+    <Reference Include="DevExpress.Xpf.CodeView.v24.1" />
+    <Reference Include="DevExpress.Data.Desktop.v24.1" />
+    <Reference Include="DevExpress.Xpf.Core.v24.1" />
+    <Reference Include="DevExpress.Xpf.Ribbon.v24.1" />
+    <Reference Include="DevExpress.Xpf.Office.v24.1" />
+    <Reference Include="DevExpress.DataVisualization.v24.1.Core" />
+    <Reference Include="DevExpress.TreeMap.v24.1.Core" />
+    <Reference Include="DevExpress.Xpf.TreeMap.v24.1" />
+    <Reference Include="DevExpress.Images.v24.1" />
+    <Reference Include="DevExpress.Xpf.Spreadsheet.v24.1" />
+    <Reference Include="DevExpress.Xpf.Themes.Office2016Colorful.v24.1">
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
